@@ -1,6 +1,6 @@
 # SSIS Course
 
-This repository will host my notes about the course "SQL Server Integration Services" from [Adan Wilbert](https://www.linkedin.com/in/adam-wilbert/?trk=lil_instructor). The course can be found on LinkedIn Learning in the following [link](https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fsql-server-integration-services-2%3Ftrk%3Dshare_ent_url%26shareId%3D%252BXRQ%252FGFTT8awBN%252Br4uQK%252BA%253D%253D).
+This repository will host my notes about the course "SQL Server Integration Services" from [Adan Wilbert](https://www.linkedin.com/in/adam-wilbert/?trk=lil_instructor). The course can be found on LinkedIn Learning in the following [link](https://www.linkedin.com/learning-login/share?forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fsql-server-integration-services-2%3Ftrk%3Dshare_ent_url%26shareId%3D%252BXRQ%252FGFTT8awBN%252Br4uQK%252BA%253D%253D). I will also complement the notes about the course with notes from the documentation and other helpful resources.
 
 
 # Introduction: What is SSIS?
@@ -39,3 +39,24 @@ There are different types of tasks you can perform within a data flow, such as:
  * Custom Tasks.
 
 For more information about this tasks, visit the previous link.
+
+## SQL Server Tasks
+
+This task can execute SQL commands, given that you enter them directly ("Direct Input") or you can also link to an external link file on your system in order to make it easier to modify what the tast is doing.
+
+In order to execute SQL commands you can use two different task:
+ 1 - Execute T-SQL Statements Task (only if you are using SQL between SQL server)
+ 2 - Execute SQL Task.
+
+## Maintenance Tasks
+
+## Transformations
+
+There are 5 general categories of transformations you can add in Integration Services:
+ 1 - Business Intelligence Transformations.
+ 2 - Row Transformations.
+ 3 - Rowset Transformations.
+ 4 - Split and Join Transformations.
+ 5 - Auditing Transformations.
+
+Within the dataflow, this will be the transformations you would have to do between the source and the destination of the data. To learn more about transformations you can visit [The Integration Services Transformations](https://learn.microsoft.com/en-us/sql/integration-services/data-flow/transformations/integration-services-transformations?view=sql-server-ver16) page.
